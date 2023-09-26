@@ -34,6 +34,8 @@ pandas==2.1.1
 pathlib==1.0.1
 prov==2.0.0
 pydot==1.4.2
+PyMuPDF==1.23.3
+PyMuPDFb==1.23.3
 pyparsing==3.1.1
 python-dateutil==2.8.2
 pytils==0.4.1
