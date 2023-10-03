@@ -2,22 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CV Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Section Extractor</title>
 </head>
 <body>
-    <h1>CV Analyzer</h1>
-
+    <h1>PDF Section Extractor</h1>
     <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".pdf" required>
-        <button type="submit">Upload and Analyze</button>
+        <input type="file" name="pdf_file" accept=".pdf">
+        <input type="submit" value="Upload and Process">
     </form>
 
-    {% if error %}
-    <p>Error: {{ error }}</p>
-    {% endif %}
-
     {% if sections %}
-    <h2>Sections:</h2>
+    <h2>Sections</h2>
     <ul>
         {% for heading, content in sections.items() %}
         <li>
